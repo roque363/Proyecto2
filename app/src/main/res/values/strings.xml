@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Pizza</string>
+
+    <string name="btnOrdenar">ORDENAR</string>
+
+    <string name="txtTipoPizza">Tipo de Pizza</string>
+    <string name="txtTipoMasa">Tipos de masa</string>
+    <string name="txtMasaGruesa">Masa gruesa</string>
+    <string name="txtMasaDelgada">Masa delgada</string>
+    <string name="txtMasaArtesanal">Masa artesanal</string>
+    <string name="txtComplementos">Complementos</string>
+    <string name="txtExtraQueso">Extra queso mozarella</string>
+    <string name="txtExtraJamon">Extra jamon</string>
+    <string name="txtDireccion">Direccion de envio</string>
+    <string name="btnEnviar">ORDENAR!</string>
+
+    <string-array name="TipoPizzas">
+        <item>Sin seleccionar</item>
+        <item>Americana</item>
+        <item>Hawaiana</item>
+        <item>Italiana</item>
+    </string-array>
+
+</resources>

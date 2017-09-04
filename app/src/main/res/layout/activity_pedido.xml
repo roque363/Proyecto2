@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.alarcon.proyecto2.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/txtTipoPizza"
+                style="@style/titleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtTipoPizza"
+                android:padding="10dp"
+                android:textColor="@color/primary_text" />
+
+            <Spinner
+                android:id="@+id/spTipoPizza"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/TipoPizzas" />
+
+            <TextView
+                android:id="@+id/txtTipoMasa"
+                style="@style/titleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtTipoMasa"
+                android:padding="10dp"
+                android:textColor="@color/primary_text" />
+
+            <RadioGroup
+                android:id="@+id/rdTipoMasas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rdMasaGruesa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonClicked"
+                    android:padding="8dp"
+                    android:text="@string/txtMasaGruesa"
+                    android:textColor="@color/secondary_text" />
+
+                <RadioButton
+                    android:id="@+id/rdMasaDelgada"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonClicked"
+                    android:text="@string/txtMasaDelgada"
+                    android:textColor="@color/secondary_text" />
+
+                <RadioButton
+                    android:id="@+id/rdMasaArtesanal"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="radioButtonClicked"
+                    android:text="@string/txtMasaArtesanal"
+                    android:textColor="@color/secondary_text" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtComplementos"
+                style="@style/titleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtComplementos"
+                android:padding="10dp"
+                android:textColor="@color/primary_text" />
+
+            <CheckBox
+                android:id="@+id/checkboxQueso"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="checkBoxClicked"
+                android:text="@string/txtExtraQueso"
+                android:textColor="@color/secondary_text" />
+
+            <CheckBox
+                android:id="@+id/checkboxJamon"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="checkBoxClicked"
+                android:text="@string/txtExtraJamon"
+                android:textColor="@color/secondary_text" />
+
+            <TextView
+                android:id="@+id/txtEnvio"
+                style="@style/titleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDireccion"
+                android:padding="10dp"
+                android:textColor="@color/primary_text" />
+
+            <EditText
+                android:id="@+id/txtDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <Button
+                android:id="@+id/btnOrdenar"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="@color/boton"
+                android:backgroundTint="@color/boton"
+                android:onClick="showDialog"
+                android:text="@string/btnEnviar"
+                android:textColor="@color/blanco"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+</ScrollView>
